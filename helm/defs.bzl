@@ -6,8 +6,6 @@ def _helm_release_impl(ctx):
         arguments = ["plugin", "list"],
     )
 
-    print(out.path)
-
     return [DefaultInfo(files = depset([out]))]
 
 helm_release = rule(
