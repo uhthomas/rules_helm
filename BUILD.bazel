@@ -1,0 +1,8 @@
+load("@bazel_gazelle//:def.bzl", "gazelle")
+
+# gazelle:prefix github.com/uhthomas/rules_helm
+gazelle(name = "gazelle")
+
+load("//helm:defs.bzl", "helm_release")
+
+helm_release(name = "helm_release_test")
