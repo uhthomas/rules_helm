@@ -473,8 +473,8 @@ def rules_helm_dependencies():
     go_repository(
         name = "com_github_deislabs_oras",
         importpath = "github.com/deislabs/oras",
-        sum = "h1:If674KraJVpujYR00rzdi0QAmW4BxzMJPVAZJKuhQ0c=",
-        version = "v0.8.1",
+        sum = "h1:8G4KZ2u5LW6jtoDh3vKzOwWm2sw90ottxKRoZj/MtEU=",
+        version = "v0.8.2-0.20200910173452-eeb3b5f12bc4",
     )
 
     go_repository(
@@ -1648,6 +1648,13 @@ def rules_helm_dependencies():
     )
 
     go_repository(
+        name = "com_github_moby_term",
+        importpath = "github.com/moby/term",
+        sum = "h1:kvRIeqJNICemq2UFLx8q/Pj+1IRNZS0XPTaMFkuNsvg=",
+        version = "v0.0.0-20200611042045-63b9a826fb74",
+    )
+
+    go_repository(
         name = "com_github_modern_go_concurrent",
         importpath = "github.com/modern-go/concurrent",
         sum = "h1:TRLaZ9cD/w8PVh93nsPXa1VrQ6jlwL5oN8l14QlcNfg=",
@@ -2498,59 +2505,59 @@ def rules_helm_dependencies():
         name = "io_k8s_api",
         build_file_proto_mode = "disable_global",
         importpath = "k8s.io/api",
-        sum = "h1:aIKUzJPb96f3fKec2lxtY7acZC9gQNDLVhfSGpxBAC4=",
-        version = "v0.18.8",
+        sum = "h1:oZf4bYsBdjC49PdTwNfLmrfUFCwKUi94HY/+emXI8Qw=",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_apiextensions_apiserver",
         build_file_proto_mode = "disable_global",
         importpath = "k8s.io/apiextensions-apiserver",
-        sum = "h1:pkqYPKTHa0/3lYwH7201RpF9eFm0lmZDFBNzhN+k/sA=",
-        version = "v0.18.8",
+        sum = "h1:PObx1dUhF/OVNtu4ghucO1jClb76YjxKeMAi0WxJNmY=",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_apimachinery",
         build_file_proto_mode = "disable_global",
         importpath = "k8s.io/apimachinery",
-        sum = "h1:jimPrycCqgx2QPearX3to1JePz7wSbVLq+7PdBTTwQ0=",
-        version = "v0.18.8",
+        sum = "h1:cwsxZazM/LA9aUsBaL4bRS5ygoM6bYp8dFk22DSYQa4=",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_apiserver",
         importpath = "k8s.io/apiserver",
         sum = "h1:Au4kMn8sb1zFdyKqc8iMHLsYLxRI6Y+iAhRNKKQtlBY=",
-        version = "v0.18.8",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_cli_runtime",
         importpath = "k8s.io/cli-runtime",
-        sum = "h1:ycmbN3hs7CfkJIYxJAOB10iW7BVPmXGXkfEyiV9NJ+k=",
-        version = "v0.18.8",
+        sum = "h1:OXC7ssdUQZ6LnHGWD16cMXECr8gKMrO5EPe3zhm211Q=",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_client_go",
         importpath = "k8s.io/client-go",
-        sum = "h1:SdbLpIxk5j5YbFr1b7fq8S7mDgDjYmUxSbszyoesoDM=",
-        version = "v0.18.8",
+        sum = "h1:xfFwj+YFKa8rcihlFYZABjxcy7Sm/wJQ+GxW3JyVtKI=",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_code_generator",
         importpath = "k8s.io/code-generator",
         sum = "h1:lgO1P1wjikEtzNvj7ia+x1VC4svJ28a/r0wnOLhhOTU=",
-        version = "v0.18.8",
+        version = "v0.19.1",
     )
 
     go_repository(
         name = "io_k8s_component_base",
         importpath = "k8s.io/component-base",
-        sum = "h1:BW5CORobxb6q5mb+YvdwQlyXXS6NVH5fDXWbU7tf2L8=",
-        version = "v0.18.8",
+        sum = "h1:FPDnaeCoOJStFvPJPPWwiVMcUa2Ru4hPrg3pfPrLGho=",
+        version = "v0.19.1",
     )
 
     go_repository(
@@ -2568,6 +2575,13 @@ def rules_helm_dependencies():
     )
 
     go_repository(
+        name = "io_k8s_klog_v2",
+        importpath = "k8s.io/klog/v2",
+        sum = "h1:X3+Mru/L3jy4BI4vcAYkHvL6PyU+QBsuhEqwlI4mgkA=",
+        version = "v2.1.0",
+    )
+
+    go_repository(
         name = "io_k8s_kube_openapi",
         importpath = "k8s.io/kube-openapi",
         sum = "h1:Oh3Mzx5pJ+yIumsAD0MOECPVeXsVot0UkiaCGVyfGQY=",
@@ -2577,8 +2591,8 @@ def rules_helm_dependencies():
     go_repository(
         name = "io_k8s_kubectl",
         importpath = "k8s.io/kubectl",
-        sum = "h1:qTkHCz21YmK0+S0oE6TtjtxmjeDP42gJcZJyRKsIenA=",
-        version = "v0.18.8",
+        sum = "h1:6HJboel+8auKqmYODpg8pd03BmusJrljHMVDzIIU8DU=",
+        version = "v0.19.1",
     )
 
     go_repository(
@@ -2592,7 +2606,7 @@ def rules_helm_dependencies():
         name = "io_k8s_metrics",
         importpath = "k8s.io/metrics",
         sum = "h1:Obf262GVd2Uy+WbPkOXNiZroI5mT8zYoKK3Y/8KF7Yc=",
-        version = "v0.18.8",
+        version = "v0.19.1",
     )
 
     go_repository(
@@ -2610,10 +2624,10 @@ def rules_helm_dependencies():
     )
 
     go_repository(
-        name = "io_k8s_sigs_structured_merge_diff_v3",
-        importpath = "sigs.k8s.io/structured-merge-diff/v3",
-        sum = "h1:dOmIZBMfhcHS09XZkMyUgkq5trg3/jRyJYFZUiaOp8E=",
-        version = "v3.0.0",
+        name = "io_k8s_sigs_structured_merge_diff_v4",
+        importpath = "sigs.k8s.io/structured-merge-diff/v4",
+        sum = "h1:YXTMot5Qz/X1iBRJhAt+vI+HVttY0WkSqqhKxQ0xVbA=",
+        version = "v4.0.1",
     )
 
     go_repository(
