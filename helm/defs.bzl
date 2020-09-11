@@ -1,4 +1,4 @@
-def _helm_release_impl(ctx):
+def _helm_template_impl(ctx):
     out = ctx.actions.declare_directory(ctx.label.name)
     ctx.actions.run(
         outputs = [out],
@@ -8,8 +8,8 @@ def _helm_release_impl(ctx):
 
     return [DefaultInfo(files = depset([out]))]
 
-helm_release = rule(
-    _helm_release_impl,
+helm_template = rule(
+    _helm_template_impl,
     attrs = {
         "_helm": attr.label(
             executable = True,

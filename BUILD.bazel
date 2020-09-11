@@ -3,6 +3,6 @@ load("@bazel_gazelle//:def.bzl", "gazelle")
 # gazelle:prefix github.com/uhthomas/rules_helm
 gazelle(name = "gazelle")
 
-load("//helm:defs.bzl", "helm_release")
+load("//helm:defs.bzl", "helm_template")
 
-helm_release(name = "helm_release_test")
+helm_template(name = "helm_template_test")
