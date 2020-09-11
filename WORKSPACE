@@ -26,7 +26,7 @@ http_archive(
     sha256 = "cdb02a887a7187ea4d5a27452311a75ed8637379a1287d8eeb952138ea485f7d",
 )
 
-load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
+load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies")
 
 gazelle_dependencies()
 
@@ -43,4 +43,5 @@ protobuf_deps()
 
 load("//helm:repositories.bzl", "rules_helm_dependencies")
 
+# gazelle:repository_macro helm/repositories.bzl%rules_helm_dependencies
 rules_helm_dependencies()
