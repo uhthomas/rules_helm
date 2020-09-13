@@ -8,8 +8,8 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "com_github_uhthomas_rules_helm",
-    sha256 = "",
-    urls = [],
+    sha256 = "e8856954b1e3f2d3978fb5eb078697a9724d1f26511537c44ac70e5f9c8fd9e0",
+    urls = ["https://github.com/uhthomas/rules_helm/archive/v0.1.0.tar.gz"],
 )
 
 load("@com_github_uhthomas_rules_helm//helm:repositories.bzl", "rules_helm_dependencies")
