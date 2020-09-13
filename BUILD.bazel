@@ -5,4 +5,8 @@ gazelle(name = "gazelle")
 
 load("//helm:defs.bzl", "helm_template")
 
-helm_template(name = "helm_template_test")
+helm_template(
+    name = "helm_template_test",
+    chart = "@io_github_kubernetes_ingress_nginx_ingress_nginx//:chart",
+    values = ["values.yaml"],
+)

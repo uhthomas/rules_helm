@@ -1,4 +1,4 @@
-workspace(name = "rules_helm")
+workspace(name = "com_github_uhthomas_rules_helm")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
@@ -49,3 +49,14 @@ load("//helm:repositories.bzl", "rules_helm_dependencies")
 
 # gazelle:repository_macro helm/repositories.bzl%rules_helm_dependencies
 rules_helm_dependencies()
+
+load("//helm:defs.bzl", "helm_chart")
+
+# repo: https://kubernetes.github.io/ingress-nginx
+# chart: ingress-nginx
+# version: 2.16.0
+helm_chart(
+    name = "io_github_kubernetes_ingress_nginx_ingress_nginx",
+    sha256 = "e218dc24614f64e2886314c71c804ca10d159298aaa56a1dcc0097e64d6ebd5f",
+    urls = ["https://github.com/kubernetes/ingress-nginx/releases/download/ingress-nginx-2.16.0/ingress-nginx-2.16.0.tgz"]
+)
