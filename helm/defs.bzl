@@ -8,8 +8,6 @@ def _helm_chart_impl(ctx):
     ctx.file("BUILD.bazel", """
 package(default_visibility = ["//visibility:public"])
 
-load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
-
 filegroup(
     name = "chart",
     srcs = ["tar.gz"],
