@@ -45,12 +45,12 @@ load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies", "rules_
 rules_proto_dependencies()
 rules_proto_toolchains()
 
-load("//helm:repositories", "rules_helm_dependencies")
+load("//helm:repositories.bzl", "rules_helm_dependencies")
 
 # gazelle:repository_macro helm/repositories.bzl%rules_helm_dependencies
 rules_helm_dependencies()
 
-load("//helm:defs", "helm_chart")
+load("//helm:defs.bzl", "helm_chart")
 
 # repo: https://kubernetes.github.io/ingress-nginx
 # chart: ingress-nginx
