@@ -688,8 +688,8 @@ github.com/tmc/grpc-websocket-proxy v0.0.0-20170815181823-89b8d40f7ca8/go.mod h1
 github.com/tmc/grpc-websocket-proxy v0.0.0-20190109142713-0ad062ec5ee5/go.mod h1:ncp9v5uamzpCO7NfCPTXjqaC+bZgJeR0sMTm6dMHP7U=
 github.com/ugorji/go v1.1.4/go.mod h1:uQMGLiO92mf5W77hV/PUCpI3pbzQx3CRekS0kk+RGrc=
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
-github.com/uhthomas/helm/v3 v3.1.0-rc.1.0.20200914114038-e2d04d587af3 h1:lE0tSeF6aFQryv6LCt/xl0QLPcuLawGN/3Akgp7qSHg=
-github.com/uhthomas/helm/v3 v3.1.0-rc.1.0.20200914114038-e2d04d587af3/go.mod h1:cWRU6pABb6s7BwO6Z69RWEy0UCKFXvx350QSnxp8y7U=
+github.com/uhthomas/helm/v3 v3.1.0-rc.1.0.20200914121339-c609c2401763 h1:Z8NzrHxJqU+qGZ52OyfFyqN+5qJWxUc07gZ9oCiXrWE=
+github.com/uhthomas/helm/v3 v3.1.0-rc.1.0.20200914121339-c609c2401763/go.mod h1:BNLIFME0n8maTbK2uW9R0b0Y0f/tJFN/58PohrQBuYs=
 github.com/urfave/cli v0.0.0-20171014202726-7bc6a0acffa5/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
 github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
 github.com/urfave/cli v1.22.1/go.mod h1:Gos4lmkARVdJ6EkW0WaNv/tZAAMe9V7XWyB60NtXRu0=

@@ -2397,8 +2397,8 @@ def rules_helm_dependencies():
         name = "sh_helm_helm_v3",
         importpath = "helm.sh/helm/v3",
         replace = "github.com/uhthomas/helm/v3",
-        sum = "h1:lE0tSeF6aFQryv6LCt/xl0QLPcuLawGN/3Akgp7qSHg=",
-        version = "v3.1.0-rc.1.0.20200914114038-e2d04d587af3",
+        sum = "h1:Z8NzrHxJqU+qGZ52OyfFyqN+5qJWxUc07gZ9oCiXrWE=",
+        version = "v3.1.0-rc.1.0.20200914121339-c609c2401763",
     )
     go_repository(
         name = "tools_gotest",
