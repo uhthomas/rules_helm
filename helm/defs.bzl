@@ -1,6 +1,7 @@
 def _helm_chart_impl(ctx):
-    ctx.download_and_extract(
+    ctx.download(
         url = ctx.attr.urls,
+        output = "tar.gz",
         sha256 = ctx.attr.sha256,
     )
 
@@ -9,10 +10,9 @@ package(default_visibility = ["//visibility:public"])
 
 load("@bazel_tools//tools/build_defs/pkg:pkg.bzl", "pkg_tar")
 
-pkg_tar(
+filegroup(
     name = "chart",
-    extension = "tar.gz",
-    srcs = glob(["**/*"]),
+    srcs = ["tar.gz"],
 )""")
 
 helm_chart = repository_rule(
