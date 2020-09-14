@@ -2424,7 +2424,3 @@ def rules_helm_dependencies():
         sum = "h1:VsBPFP1AI068pPrMxtb/S8Zkgf9xEmTLJjfM+P5UIEo=",
         version = "v2.2.0+incompatible",
     )
-
-def _maybe(rule, name, **kwargs):
-    if name not in native.existing_rules():
-        rule(name = name, **kwargs)
