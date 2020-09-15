@@ -407,8 +407,9 @@ def rules_helm_dependencies():
     go_repository(
         name = "com_github_deislabs_oras",
         importpath = "github.com/deislabs/oras",
-        sum = "h1:If674KraJVpujYR00rzdi0QAmW4BxzMJPVAZJKuhQ0c=",
-        version = "v0.8.1",
+        replace = "github.com/deislabs/oras",
+        sum = "h1:8G4KZ2u5LW6jtoDh3vKzOwWm2sw90ottxKRoZj/MtEU=",
+        version = "v0.8.2-0.20200910173452-eeb3b5f12bc4",
     )
     go_repository(
         name = "com_github_denisenkom_go_mssqldb",
@@ -443,8 +444,9 @@ def rules_helm_dependencies():
     go_repository(
         name = "com_github_docker_cli",
         importpath = "github.com/docker/cli",
-        sum = "h1:FwssHbCDJD025h+BchanCwE1Q8fyMgqDr2mOQAWOLGw=",
-        version = "v0.0.0-20200130152716-5d0cf8839492",
+        replace = "github.com/docker/cli",
+        sum = "h1:HDAal6bNQR44qAcPV2ZY0gF3nENOqYTz6q6T01FDKws=",
+        version = "v0.0.0-20200617172703-0ed913b885c8",
     )
     go_repository(
         name = "com_github_docker_distribution",
@@ -1335,8 +1337,8 @@ def rules_helm_dependencies():
     go_repository(
         name = "com_github_microsoft_hcsshim",
         importpath = "github.com/Microsoft/hcsshim",
-        sum = "h1:ptnOoufxGSzauVTsdE+wMYnCWA301PdoN4xg5oRdZpg=",
-        version = "v0.8.7",
+        sum = "h1:UW5140NJN+noCrnwdxnl5bDDfDutC6IZl6phme74s5c=",
+        version = "v0.8.8",
     )
     go_repository(
         name = "com_github_miekg_dns",
@@ -1554,12 +1556,7 @@ def rules_helm_dependencies():
         sum = "h1:eNUVfm/RFLIi1G7flU5/ZRTHvd4kcVuzfRnL6OFlzCI=",
         version = "v0.1.2-0.20190507144316-5b71a03e2700",
     )
-    go_repository(
-        name = "com_github_opencontainers_runtime_tools",
-        importpath = "github.com/opencontainers/runtime-tools",
-        sum = "h1:H7DMc6FAjgwZZi8BRqjrAAHWoqEr5e5L6pS4V0ezet4=",
-        version = "v0.0.0-20181011054405-1d69bd0f9c39",
-    )
+
     go_repository(
         name = "com_github_opentracing_basictracer_go",
         importpath = "github.com/opentracing/basictracer-go",
@@ -1896,12 +1893,7 @@ def rules_helm_dependencies():
         sum = "h1:nOGnQDM7FYENwehXlg/kFVnos3rEvtKTjRvOWSzb6H4=",
         version = "v1.5.1",
     )
-    go_repository(
-        name = "com_github_syndtr_gocapability",
-        importpath = "github.com/syndtr/gocapability",
-        sum = "h1:zLV6q4e8Jv9EHjNg/iHfzwDkCve6Ua5jCygptrtXHvI=",
-        version = "v0.0.0-20170704070218-db04d3cc01c8",
-    )
+
     go_repository(
         name = "com_github_tidwall_pretty",
         importpath = "github.com/tidwall/pretty",
@@ -2200,12 +2192,7 @@ def rules_helm_dependencies():
         sum = "h1:6HJboel+8auKqmYODpg8pd03BmusJrljHMVDzIIU8DU=",
         version = "v0.19.1",
     )
-    go_repository(
-        name = "io_k8s_kubernetes",
-        importpath = "k8s.io/kubernetes",
-        sum = "h1:qTfB+u5M92k2fCCCVP2iuhgwwSOv1EkAkvQY1tQODD8=",
-        version = "v1.13.0",
-    )
+
     go_repository(
         name = "io_k8s_metrics",
         importpath = "k8s.io/metrics",
