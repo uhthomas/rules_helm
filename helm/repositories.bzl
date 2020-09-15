@@ -455,8 +455,9 @@ def rules_helm_dependencies():
     go_repository(
         name = "com_github_docker_docker",
         importpath = "github.com/docker/docker",
-        sum = "h1:KXS1Jg+ddGcWA8e1N7cupxaHHZhit5rB9tfDU+mfjyY=",
-        version = "v1.4.2-0.20200203170920-46ec8731fbce",
+        replace = "github.com/moby/moby",
+        sum = "h1:NT0cwArZg/wGdvY8pzej4tPr+9WGmDdkF8Suj+mkz2g=",
+        version = "v17.12.0-ce-rc1.0.20200618181300-9dc6525e6118+incompatible",
     )
     go_repository(
         name = "com_github_docker_docker_credential_helpers",
